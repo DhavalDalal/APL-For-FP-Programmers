@@ -89,8 +89,8 @@ const oscillatingToad = [
 const render = world => world.join("\n").replace(/,/g, "").concat("\n");
 
 Rx = require("./javascript_lib/rx/rx.lite.js");
-Rx.Observable.interval(1000)
-  .take(10)
+Rx.Observable.interval(500)
+  .take(5)
   .scan((oldWorld, n) => newWorld(oldWorld), oscillatorBlinker)
   .subscribe(
      w => console.info(render(w)),

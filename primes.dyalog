@@ -1,4 +1,4 @@
-﻿:Namespace APL4FP
+﻿:Namespace primes
 
 ⎕IO←0
 
@@ -10,7 +10,5 @@ primes1←{(2=+⌿0=X∘.|X)⌿X←⍳⍵}
 
 ⍝ N Primes: Membership
 primes2←{(~X∊X∘.×X)⌿X←2↓⍳⍵}
-
-
 
 :EndNamespace

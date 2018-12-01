@@ -60,6 +60,14 @@ d←∊0{(⍺+1){⍵,⍺⍺ ⍵⍵ ⍺}∇/⌽⍺,1↓⍵}ast
 ⍝	         A1 P0 A1 A1 P0 A1   
 ⍝	         │     │  │     │    
 ⍝	         V0    V0 V0    V0   
+⍝
+⍝ A	Atomic
+⍝ B	Binding
+⍝ E	Expression
+⍝ F	Function
+⍝ N	Number
+⍝ P	Primitive
+⍝ V	Variable
 
 t←3 1 0 7 1 2 9 0 10 1 3 1 2 0 10 9 0 10 1 2 0 10 9 0 10 0 10
 k←1 0 0 0 0 1 0 1 0 1 1 0 2 1 0 0 1 0 0 2 1 0 0 1 0 1 0 

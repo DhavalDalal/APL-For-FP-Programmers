@@ -11,4 +11,7 @@ primes1←{(2=+⌿0=X∘.|X)⌿X←⍳⍵}
 ⍝ N Primes: Membership
 primes2←{(~X∊X∘.×X)⌿X←2↓⍳⍵}
 
+⍝ N Primes: ~
+primes3←{(⊢~∘.×⍨)⌿2↓⍳⍵}
+
 :EndNamespace

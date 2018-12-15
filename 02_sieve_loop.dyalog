@@ -2,7 +2,7 @@
 ⍝ well, the sieve is by definition a loop :-)
 
  sqrt←⌊n*0.5                 ⍝ End of loop
- candidates←1+2×1+⍳⌊0.5×n-1  ⍝ Odd numbers
+ candidates←1+2×1+⍳⌊0.5×n-1  ⍝ Odd numbers from 3
  primes←2                    ⍝ We "know" this
 
  :Repeat

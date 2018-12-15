@@ -1,6 +1,6 @@
-﻿ sieve_roger←{                  ⍝ Comments in "traditional" language
+﻿ sieve_roger←{                  ⍝ Comments use "traditional" notation
      q←2 3 5                    ⍝ Cheat a little to get started
-     b←⍵⍴{∧⌿↑(×/⍵)⍴¨~⍵↑¨1}q     ⍝ Knock off multiples of known small primes
+     b←⍵⍴{∧⌿↑(×/⍵)⍴¨~⍵↑¨1}q     ⍝ Knock off multiples of known primes
      b[⍳6⌊⍵]←(6⌊⍵)⍴0 0 1 1 0 1  ⍝ Special-case interval [0..5]
      49≥⍵:b                     ⍝ Up to 49 (7^2), we are done
 
